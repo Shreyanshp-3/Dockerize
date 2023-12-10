@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build app') {
             steps {
-                checkout scmGit(branches:[[name:'*/main']],extension:[],userRemoteConfigs:[[url:'https://github.com/Shreyanshp-3/Dockerize.git']])
+                checkout scmGit(branches:[[name: '*/main']],extension:[],userRemoteConfigs:[[url:'https://github.com/Shreyanshp-3/Dockerize.git']])
             }
         }
         stage('Build docker image') {
