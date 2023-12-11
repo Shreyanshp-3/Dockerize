@@ -4,3 +4,9 @@ WORKDIR /app
 COPY . /app
 RUN javac Hello.java
 CMD ["java","Hello"]
+
+# FROM openjdk
+# WORKDIR /app
+# COPY . /app
+# RUN javac sample.java
+# CMD ["java","sample"]
